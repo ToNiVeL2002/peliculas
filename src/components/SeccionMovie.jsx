@@ -9,24 +9,23 @@ const SeccionMovie = ({poster, title}) => {
       <span className='title'>{title}</span>
       <div className='seccion-slider'>
 
-        {/* {
+        {
           poster.map((poster) => {
-            return <MovieCard poster={poster} key={poster.id}/>
+            return <MovieCard key={poster.id} imagen={poster.poster_path} name={poster.title}/>
           })
-        } */}
+        }
 
-        {/* <MovieCard poster={poster} key={poster.id}/> */}
-        <MovieCard/>
-        <MovieCard/>
-        <MovieCard/>
-        <MovieCard/>
-        <MovieCard/>
-        <MovieCard/>
-        <MovieCard/>
-        <MovieCard/>
-        <MovieCard/>
-        <MovieCard/>
 
+        {/* <MovieCard/>
+        <MovieCard/>
+        <MovieCard/>
+        <MovieCard/>
+        <MovieCard/>
+        <MovieCard/>
+        <MovieCard/>
+        <MovieCard/>
+        <MovieCard/>
+        <MovieCard/> */}
         
 
         {

@@ -1,9 +1,9 @@
 .movie-container{
     width: 96px;
-    height: 121px;
+    /* height: 121px; */
     border-radius: 17px;
-    background-color: aquamarine;
-    margin: 20px;
+    /* background-color: aquamarine; */
+    margin: 5px;
 
 }
 

@@ -20,7 +20,7 @@ const Home = () => {
   useEffect(() => {
     fetch("https://api.themoviedb.org/3/trending/all/week?api_key=77e8c4b872c1f73d67d98342f765eabb")
     .then((response) => response.json())
-    .then((data) => setPosters(data));
+    .then((data) => setPosters(data.results));
   }, [])
 
 
@@ -29,12 +29,18 @@ const Home = () => {
     <div>
       <Serch/>
 
-      {/* <SeccionMovie poster = {posters}/> */}
-      <SeccionMovie title={"New Movies"}/>
+      <SeccionMovie poster = {posters} title={"New Movies"}/>
+
+      <SeccionMovie poster = {posters} title={"Comming Soon"}/>
+
+      <SeccionMovie poster = {posters} title={"Top Movie"}/>
+
+      <SeccionMovie poster = {posters} title={"Accion Movie"}/>
+
+      {/* <SeccionMovie title={"New Movies"}/>
       <SeccionMovie title={"Comming Soon"}/>
       <SeccionMovie title={"Top Movie"}/>
-      <SeccionMovie title={"Accion Movie"}/>
-
+      <SeccionMovie title={"Accion Movie"}/> */}
 
       <NavBar/>
     </div>
