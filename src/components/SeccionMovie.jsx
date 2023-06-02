@@ -1,6 +1,7 @@
 import React from 'react'
 import './SeccionMovie.css'
 import { MovieCard } from './MovieCard'
+import { NavLink } from 'react-router-dom'
 const SeccionMovie = ({poster, title}) => {
   
   return (
@@ -11,7 +12,10 @@ const SeccionMovie = ({poster, title}) => {
 
         {
           poster.map((poster) => {
-            return <MovieCard key={poster.id} imagen={poster.poster_path} name={poster.title}/>
+            return <NavLink to={'/peliculas'} >
+              
+              <MovieCard key={poster.id} imagen={poster.poster_path} name={poster.title}/>
+            </NavLink>
           })
         }
 
