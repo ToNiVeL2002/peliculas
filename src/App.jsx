@@ -7,6 +7,7 @@ import Home from "./screens/Home";
 import { getMovies } from "./services/movies";
 
 function App() {
+  //BY VELIZ
   // const [dogs, setDogs] = useState("");
   // // console.log(dogs);
   // useEffect(() => {

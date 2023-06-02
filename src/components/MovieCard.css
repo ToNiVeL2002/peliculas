@@ -1,0 +1,14 @@
+.movie-container{
+    width: 96px;
+    height: 121px;
+    border-radius: 17px;
+    background-color: aquamarine;
+    margin: 20px;
+
+}
+
+.movie-container img{
+    width: 96px;
+    height: 121px;
+    border-radius: 17px;
+}
