@@ -25,6 +25,7 @@ const Home = () => {
 
 
 
+
   return (
     <div>
       <Serch/>

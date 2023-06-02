@@ -1,7 +1,7 @@
 import React from 'react'
 import './MovieCard.css'
 
-export const    MovieCard = ({imagen, name}) => {
+export const MovieCard = ({imagen, name}) => {
   // const actor = props.actor
   return (
     <div className='movie-container'>
