@@ -5,6 +5,7 @@ import { BookingButton } from "./components/BookingButton";
 import { useEffect, useState } from "react";
 import Home from "./screens/Home";
 import { getMovies } from "./services/movies";
+import { useParams } from "react-router-dom";
 
 function App() {
   //BY VELIZ
@@ -29,8 +30,13 @@ function App() {
   // },[]);
 
   const [peli, setPeli] = useState("");
+  
+  const{slug} = useParams();
+  console.log(slug);
+  
   useEffect(() => {
-    getMovies("Spider Man").then((data) => setPeli(data))
+    // getMovies("Spider Man").then((data) => setPeli(data))
+    getMovieById(slug).then((data) => setPeli(data))
   }, []);
 
   return (

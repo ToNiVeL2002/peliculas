@@ -12,7 +12,7 @@ const SeccionMovie = ({poster, title}) => {
 
         {
           poster.map((poster) => {
-            return <NavLink to={'/peliculas'} >
+            return <NavLink to={`/peliculas/${poster.id}`} >
               
               <MovieCard key={poster.id} imagen={poster.poster_path} name={poster.title}/>
             </NavLink>
