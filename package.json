@@ -1,7 +1,6 @@
 {
   "name": "peliculas",
   "homepage": "https://ToNiVeL2002.github.io/peliculas",
-  "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {

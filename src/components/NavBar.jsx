@@ -8,7 +8,7 @@ export const NavBar = () => {
   return (
     <div className='navbar-container'>
 
-      <NavLink>
+      <NavLink to={"/"}>
         <Icon className='icon' icon="solar:home-2-outline" />
         
       </NavLink>

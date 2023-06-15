@@ -13,12 +13,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
       <Routes>
         <Route path='/' element={<Home/>} /> 
-        <Route path='/peliculas/:slug' element={<App/>}/>
+        {/* <Route path='/peliculas/:slug' element={<App/>}/> */}
 
         <Route path='*' element={<p> Not found </p>} />
       </Routes>
 
-      <NavBar/>
+      {/* <NavBar/> */}
     </BrowserRouter>
   </React.StrictMode>,
 )
