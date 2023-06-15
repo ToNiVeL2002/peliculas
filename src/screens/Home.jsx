@@ -43,7 +43,7 @@ const Home = () => {
       <SeccionMovie title={"Top Movie"}/>
       <SeccionMovie title={"Accion Movie"}/> */}
 
-      <NavBar/>
+      {/* <NavBar/> */}
     </div>
   )
 }
